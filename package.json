@@ -1,20 +1,26 @@
 {
-  "name": "project2-react",
-  "version": "0.1.0",
+  "name": "rehearsal-app",
+  "version": "0.2.1",
+  "description": "Prototype of an rehearsal room app. Features for better repetition planning, communication between rehearsal room mates and for equipment purchase and maintainment.",
+  "main": "scripts/index.js",
   "private": true,
+  "author": "Gleb Abramov <abramov.gleb@gmail.com> (http://www.gleb-abramov.com/)",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "4.2.4",
     "@testing-library/react": "9.4.0",
     "@testing-library/user-event": "7.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "react-scripts": "3.4.0",
+    "prettier": "1.19.1",
+    "styled-components": "5.0.1"
   },
   "eslintConfig": {
     "extends": "react-app"

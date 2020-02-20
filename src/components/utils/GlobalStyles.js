@@ -1,13 +1,36 @@
+import { createGlobalStyle } from 'styled-components'
+
+export default createGlobalStyle`
+
+* {
+  background: #135285;
+}
+
+
 body {
+  display: flex;
   margin: 0;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'PT Sans' sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+.text-content {
+  display: block;
+  margin: 12px;
+  justify-content: center;
+}
+
+.display-none {
+  display: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+`
