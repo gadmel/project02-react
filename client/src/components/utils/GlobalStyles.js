@@ -6,7 +6,6 @@ export default createGlobalStyle`
   background: #135285;
 }
 
-
 body {
   display: flex;
   margin: 0;
@@ -17,20 +16,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-}
-
-.text-content {
-  display: block;
-  margin: 12px;
-  justify-content: center;
-}
-
-.display-none {
-  display: none;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 `

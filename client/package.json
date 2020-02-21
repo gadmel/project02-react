@@ -1,0 +1,38 @@
+{
+  "name": "rehearsal-room-client",
+  "version": "0.2.1",
+  "description": "Client of the rehearsal-room app.",
+  "main": "index.js",
+  "author": {
+    "name": "Gleb Abramov",
+    "e-mail": "abramov.gleb@gmail.com"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.4.0",
+    "styled-components": "5.0.1"
+  }
+}

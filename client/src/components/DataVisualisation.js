@@ -5,7 +5,10 @@ export default function dataVisualisation({ transferedData }) {
   return (
     <DataVisualisation>
       {transferedData.map(singleData => (
-        <ListItemRow key={singleData.id}>{singleData.name}</ListItemRow>
+        <ListItemRow key={singleData.id}>
+          {singleData.name}
+          <h4>{singleData.id}</h4>
+        </ListItemRow>
       ))}
     </DataVisualisation>
   )
@@ -22,8 +25,8 @@ const DataVisualisation = styled.section`
   color: $color-white;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 `
 const ListItemRow = styled.article`
   display: flex;
-  overflow-y: auto;
 `
