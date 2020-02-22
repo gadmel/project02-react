@@ -1,20 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function dataVisualisation({ transferedData }) {
-  return (
-    <DataVisualisation>
-      {transferedData.map(singleData => (
-        <ListItemRow key={singleData.id}>
-          {singleData.name}
-          <h4>{singleData.id}</h4>
-        </ListItemRow>
-      ))}
-    </DataVisualisation>
-  )
+export default function DataVisualisation() {
+  return <DataVisualisationStyled></DataVisualisationStyled>
 }
 
-const DataVisualisation = styled.section`
+const DataVisualisationStyled = styled.section`
   display: flex;
   flex-direction: column;
   margin: 8px;
@@ -26,7 +17,4 @@ const DataVisualisation = styled.section`
   align-items: center;
   justify-content: center;
   overflow-y: auto;
-`
-const ListItemRow = styled.article`
-  display: flex;
 `

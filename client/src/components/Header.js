@@ -15,16 +15,14 @@ const HeaderStyled = styled.header`
   grid-area: header;
   align-items: center;
   justify-content: center;
-  height: fit-content;
   margin: 0;
-  width: 100vw;
 `
 const Logo = styled.img`
   display: flex;
+  height: 100px;
 `
 
 const HeaderTitle = styled.h1`
-  flex-grow: 1;
   color: $color-white;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(15px + 2vmin);
 `

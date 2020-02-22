@@ -4,7 +4,7 @@ import styled from 'styled-components/'
 export default function ComponentForm({ handleDelete, handleAdd }) {
   const [data, setData] = useState({
     newSingleData: '',
-    singleDataToDelete: ''
+    singleDataToDelete: '',
   })
 
   return (

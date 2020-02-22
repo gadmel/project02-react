@@ -1,14 +1,22 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import { NavLink } from 'react-router-dom'
 
-export default function Navigation({ pagesToNavigateTo }) {
+export default function Navigation() {
   return (
     <NavigationStyled>
-      {pagesToNavigateTo.map(page => (
-        <NavigationItem isActive={page.isStartPage}>
-          <i className={page.navigationPictogram}></i>
-        </NavigationItem>
-      ))}
+      <LinkStyled exact to="/">
+        <i className="fas fa-home"></i>
+      </LinkStyled>
+      <LinkStyled to="/members">
+        <i className="fas fa-users"></i>
+      </LinkStyled>
+      <LinkStyled to="/profile">
+        <i className="fas fa-user"></i>
+      </LinkStyled>
+      <LinkStyled to="/settings">
+        <i className="fas fa-user-cog"></i>
+      </LinkStyled>
     </NavigationStyled>
   )
 }
@@ -24,19 +32,23 @@ const NavigationStyled = styled.nav`
   max-width: 100%;
 `
 
-const NavigationItem = styled.div`
+const LinkStyled = styled(NavLink)`
   display: flex;
   flex-grow: 1;
+  text-decoration: none;
   justify-content: center;
   justify-self: stretch;
-  color: $color-white;
-  font-size: 2.2rem;
+  align-items: center;
+  color: white;
+  font-size: 2.4rem;
   background-color: transparent;
   margin: 0;
   padding: 0;
-  color: ${props => props.isActive && '#0d293f'};
+  &.active {
+    color: #8681b4;
   }
   &:hover {
-    background: #8e8baa;
+    color: #8e8baa;
+    background: #135285;
   }
 `

@@ -1,10 +1,9 @@
-const fs = require('fs')
 const express = require('express')
 const cors = require('cors')
 const mongoose = require('mongoose')
 // const uid = require('uid')
 
-const { DB_URL, PORT = 2234 } = process.env
+const { DB_URL, PORT = 2234, CLIENT_URL } = process.env
 
 mongoose
   .connect(DB_URL, {

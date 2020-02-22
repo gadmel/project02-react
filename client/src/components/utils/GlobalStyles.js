@@ -7,6 +7,7 @@ export default createGlobalStyle`
 }
 
 body {
+  color: white;
   display: flex;
   margin: 0;
   width: 100%;
