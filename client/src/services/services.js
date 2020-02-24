@@ -15,7 +15,7 @@ export function patchUser(id, data) {
 }
 
 function fetchUsers({ method = 'GET', id = '', data } = {}) {
-  return fetch('http://localhost:2234/users/' + id, {
+  return fetch('users/' + id, {
     method,
     body: JSON.stringify(data),
     headers: {

@@ -76,7 +76,10 @@ function App() {
 
   function createUser(userData) {
     postUser(userData).then(user => {
-      setUsers([...users, { id: Math.random(), name: user.name }])
+      setUsers([
+        ...users,
+        { id: user.id ? user.id : Math.random(), name: user.name },
+      ])
     })
   }
 

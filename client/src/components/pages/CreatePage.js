@@ -13,6 +13,15 @@ export default function CreatePage({
     userToDelete: '',
   })
 
+  // function handleSubmit(event) {
+  //   event.preventDefault()
+  //   const form = event.target
+  //   onSubmit(card)
+  //   form.reset()
+  //   setCard({})
+  //   form[0] && form[0].focus()
+  // }
+
   return (
     <CreatePageContainer>
       <UsersVisualisation users={usersByRole} setUsers={setUsers} />
@@ -61,8 +70,12 @@ export default function CreatePage({
 
   function sendDataToState(event) {
     event.preventDefault()
-    handleDeleteUser(event.target.userToDelete)
-    handleCreateUser(event.target.newUserName)
+    if (handleDeleteUser) {
+      handleDeleteUser(event.target.userToDelete)
+    }
+    if (handleCreateUser) {
+      handleCreateUser(event.target.newUserName.value)
+    }
   }
 }
 
