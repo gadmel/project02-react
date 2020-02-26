@@ -10,9 +10,9 @@ function App() {
   const [data, setData] = useState([{ id: '001', name: 'Data in array' }])
   const [users, setUsers] = useState([])
 
-  useEffect(() => {
-    getUsers().then(setUsers)
-  }, [])
+  // useEffect(() => {
+  //   getUsers().then(setUsers)
+  // }, [])
 
   const [designData, setDesignData] = useState({
     headerLogoSrc: '/guitars-logo.png',
@@ -54,7 +54,7 @@ function App() {
             <CreatePage
               handleCreateUser={createUser}
               handleDeleteUser={deleteUser}
-              usersByRole={usersByRole}
+              usersByRole={users} // stand usersByRole
             />
           </Route>
           <Route path="/profile"></Route>
@@ -75,16 +75,15 @@ function App() {
   }
 
   function createUser(userData) {
+    console.log(userData)
     postUser(userData).then(user => {
-      setUsers([
-        ...users,
-        { id: user.id ? user.id : Math.random(), name: user.name },
-      ])
+      console.log(user)
+      setUsers([...users, user])
     })
   }
 
   function deleteUser(id) {
-    const index = users.findIndex(user => user.id === id)
+    const index = users.findIndex(user => user._id === id)
     setUsers([...users.slice(0, index), ...users.slice(index + 1)])
   }
 }

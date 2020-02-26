@@ -1,32 +1,30 @@
-{
-  "usersData": [
-    {
-      "id": "001",
-      "name": "Gleb Abramov",
-      "roles": ["room-administrator", "musician"],
-      "roomAsignment": "RehearsalRoom_1",
-      "avatarUrl": "https://via.placeholder.com/200x200"
-    },
-    {
-      "id": "002",
-      "name": "Aleksey Tietz",
-      "roles": ["room-administrator", "musician"],
-      "roomAsignment": "RehearsalRoom_1",
-      "avatarUrl": "https://via.placeholder.com/200x200"
-    },
-    {
-      "id": "003",
-      "name": "Viktor Miller",
-      "roles": ["musician"],
-      "roomAsignment": "RehearsalRoom_1",
-      "avatarUrl": "https://via.placeholder.com/200x200"
-    },
-    {
-      "id": "004",
-      "name": "Andrey Morozov",
-      "roles": ["musician"],
-      "roomAsignment": "RehearsalRoom_1",
-      "avatarUrl": "https://via.placeholder.com/200x200"
-    }
-  ]
-}
+[
+  {
+    "id": "001",
+    "name": "Gleb Abramov",
+    "roles": ["room-administrator", "musician"],
+    "roomAsignment": "RehearsalRoom_1",
+    "avatarUrl": "https://via.placeholder.com/200x200"
+  },
+  {
+    "id": "002",
+    "name": "Aleksey Tietz",
+    "roles": ["room-administrator", "musician"],
+    "roomAsignment": "RehearsalRoom_1",
+    "avatarUrl": "https://via.placeholder.com/200x200"
+  },
+  {
+    "id": "003",
+    "name": "Viktor Miller",
+    "roles": ["musician"],
+    "roomAsignment": "RehearsalRoom_1",
+    "avatarUrl": "https://via.placeholder.com/200x200"
+  },
+  {
+    "id": "004",
+    "name": "Andrey Morozov",
+    "roles": ["musician"],
+    "roomAsignment": "RehearsalRoom_1",
+    "avatarUrl": "https://via.placeholder.com/200x200"
+  }
+]

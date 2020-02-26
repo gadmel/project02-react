@@ -24,7 +24,11 @@ export default function CreatePage({
 
   return (
     <CreatePageContainer>
-      <UsersVisualisation users={usersByRole} setUsers={setUsers} />
+      <UsersVisualisation
+        users={usersByRole}
+        setUsers={setUsers}
+        handleDeleteUser={handleDeleteUser}
+      />
 
       <Switch>
         <Route path="/members/create-user">
@@ -74,7 +78,9 @@ export default function CreatePage({
       handleDeleteUser(event.target.userToDelete)
     }
     if (handleCreateUser) {
-      handleCreateUser(event.target.newUserName.value)
+      const newUser = { name: event.target.newUserName.value }
+      handleCreateUser(newUser)
+      console.info(newUser)
     }
   }
 }

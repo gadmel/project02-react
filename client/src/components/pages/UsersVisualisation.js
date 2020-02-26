@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function UsersVisualisation({ users }) {
+export default function UsersVisualisation({ users, handleDeleteUser }) {
   return (
     <Visualisation>
       {users.map(user => (
@@ -10,7 +10,11 @@ export default function UsersVisualisation({ users }) {
           <h4>ID: {user._id}</h4>
           <ul css="padding: 0; margin: 0;">
             {user.roles && user.roles.map(role => <Tag key={role}>{role}</Tag>)}
-          </ul>
+          </ul>{' '}
+          <Delete
+            onClick={handleDeleteUser(user._id)}
+            className="fas fa-user-slash"
+          />
         </ListItemRow>
       ))}
     </Visualisation>
@@ -43,4 +47,8 @@ const Tag = styled.li`
   margin-right: 4px;
   color: #135285;
   font-weight: bold;
+`
+const Delete = styled.i`
+  font-size: 4.8em;
+  color: beige;
 `
